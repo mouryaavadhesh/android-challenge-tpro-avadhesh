@@ -4,7 +4,7 @@ This repository is part of the interviewing process for the Android Developer po
 
 ## Repository Organization
 
-- [Theoretical Questions](https://github.com/T-Pro/android-challenge-elena/tree/master/Theoretical%20Questions) - Folder that contains the answers to all the theoretical-only questions inside a README file.
+- [Theoretical Questions](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) - Folder that contains the answers to all the theoretical-only questions inside a README file.
 - [Code Questions](https://github.com/T-Pro/android-challenge-elena/tree/master/Code%20Questions) - Folder that contains the answers to all the code questions and also some theoretical points of those inside a README file.
   - [Broken App](https://github.com/T-Pro/android-challenge-elena/tree/master/Code%20Questions/BrokenApp) - App requested to be fixed on the first question of the third questions level.
   - [Simple App](https://github.com/T-Pro/android-challenge-elena/tree/master/Code%20Questions/SimpleApp) - App requested to be developed on the second question of the third questions level.
@@ -17,9 +17,9 @@ The whole test is divided in three levels and the collection of answers to these
 
 | Task | Done | Time Spent |
 | ----------- | :-: | :-: |
-| [Explain the main concept of lambda functions.](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) |   | |
-| [What's the difference between `UInt16` and `Int32`?](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) |   | |
-| [Do you have any experience with functional programming languages?](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) |   | |
+| [Explain the main concept of lambda functions.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) | Think of lambda expressions as little coding shortcuts—a way to write concise, anonymous functions.  | |
+| [What's the difference between `UInt16` and `Int32`?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) |   | |
+| [Do you have any experience with functional programming languages?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) |   | |
 | [Compile any Kotlin source using `kotlinc`.](https://github.com/T-Pro/android-challenge-elena/blob/master/Code%20Questions/README.md) |   | |
 | [Create a function in Kotlin that writes 50 million random floats in a file.](https://github.com/T-Pro/android-challenge-elena/blob/master/Code%20Questions/README.md) |   | |
   
