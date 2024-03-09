@@ -47,10 +47,10 @@ generateRandomFloatsToFile(fileName, numberOfFloats)
 ### Second Level
 
 | Task | Done | Time Spent |
-| ----------- | :-: | :-: |
-| [Do you have experience with C++ (JNI) code in Android projects?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Theoretical%20Questions/README.md) |   | |
-| [Create a code below that implements the basic concept of dependency injection.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) |   | |
-| [Implement a simple Model-View-Presenter or Model-View-ViewModel structure below and also explain why you choose MVVM over MVP and vice versa.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) |   | |
+| ----------- |:----:|:----------:|
+| [Do you have experience with C++ (JNI) code in Android projects?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Theoretical%20Questions/README.md) |  No  |            |
+| [Create a code below that implements the basic concept of dependency injection.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) | Yes  |   20 Min   |
+| [Implement a simple Model-View-Presenter or Model-View-ViewModel structure below and also explain why you choose MVVM over MVP and vice versa.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) | Yes  |   20 Min   |
 
 ### Third Level
 
