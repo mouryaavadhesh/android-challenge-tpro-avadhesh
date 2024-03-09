@@ -6,7 +6,7 @@ This repository is part of the interviewing process for the Android Developer po
 
 - [Theoretical Questions](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) - Folder that contains the answers to all the theoretical-only questions inside a README file.
 - [Code Questions](https://github.com/T-Pro/android-challenge-elena/tree/master/Code%20Questions) - Folder that contains the answers to all the code questions and also some theoretical points of those inside a README file.
-  - [Broken App](https://github.com/T-Pro/android-challenge-elena/tree/master/Code%20Questions/BrokenApp) - App requested to be fixed on the first question of the third questions level.
+  - [Broken App](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/BrokenApp) - App requested to be fixed on the first question of the third questions level.
   - [Simple App](hhttps://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/SimpleApp) - App requested to be developed on the second question of the third questions level.
 
 ## Tasks
@@ -27,7 +27,7 @@ The whole test is divided in three levels and the collection of answers to these
 
 | Task | Done | Time Spent |
 | ----------- | :-: | :-: |
-| [Do you have experience with C++ (JNI) code in Android projects?](https://github.com/T-Pro/android-challenge-elena/blob/master/Theoretical%20Questions/README.md) |   | |
+| [Do you have experience with C++ (JNI) code in Android projects?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Theoretical%20Questions/README.md) |   | |
 | [Create a code below that implements the basic concept of dependency injection.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) |   | |
 | [Implement a simple Model-View-Presenter or Model-View-ViewModel structure below and also explain why you choose MVVM over MVP and vice versa.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) |   | |
 
@@ -35,7 +35,7 @@ The whole test is divided in three levels and the collection of answers to these
 
 | Task | Done | Time Spent |
 | ----------- | :-: | :-: |
-| Solve the bugs and bad pratices of the project inside the [BrokenApp](https://github.com/T-Pro/android-challenge-elena/tree/master/Code%20Questions/BrokenApp) folder. |   | |
+| Solve the bugs and bad pratices of the project inside the [BrokenApp](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/BrokenApp) folder. |   | |
 | Create a [simple app](hhttps://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/SimpleApp) app that requests a specific endpoint. |   | |
 
 ### Bonus
