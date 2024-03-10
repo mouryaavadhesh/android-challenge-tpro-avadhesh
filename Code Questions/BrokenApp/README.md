@@ -12,7 +12,7 @@ T-Pro gave the following implementation hints:
 
 ## Prerequisites
 
-A:
+A:Latest version of kotlin. Update application version and gradle. 
 
 ## Architecture
 
@@ -20,12 +20,15 @@ A:
 
 ## Libraries Used
 
-A:
+A: Kotlin library update, JavaVersion 
 
 ## Backlog
 
-A:
+A: Library was not updated. Package name wrong at many places.
+   Gradle was not update and error in that. setting.gradle file out of date.
+   MainActivity and activity_main.xml error in that. 
+   App lavel build file update library and compileSdk version. 
 
 ## Improvements
 
-A:
+A:com.tpro.brokenapp.tpro.brokenapp.tpro.broeknapp package fix which was incorrect. 
