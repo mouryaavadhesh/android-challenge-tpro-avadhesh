@@ -35,7 +35,7 @@ class AudioViewModel @Inject constructor(private val repository: AudioRepository
 
         viewModelScope.launch {
             try {
-                val response = repository.getWeather(city, apiKey)
+                val response = repository.getAudio()
                 if (response.isSuccessful) {
                     _audioData.value = response.body()
                 }

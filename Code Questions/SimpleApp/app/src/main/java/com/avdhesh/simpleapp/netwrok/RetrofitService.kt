@@ -16,7 +16,7 @@ import retrofit2.http.GET
 interface RetrofitService {
     @GET
     suspend fun getAudio(
-    ): Response<AudioModel>
+    ): Response<List<AudioModel>>
 }
 
 @Module

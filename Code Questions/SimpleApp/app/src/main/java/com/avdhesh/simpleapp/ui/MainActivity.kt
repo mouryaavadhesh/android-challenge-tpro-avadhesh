@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.avdhesh.simpleapp.R
@@ -13,7 +12,7 @@ import com.avdhesh.simpleapp.databinding.ActivityMainBinding
 import com.avdhesh.simpleapp.model.AudioViewModelFactory
 import com.avdhesh.simpleapp.network.NetworkConstant
 import com.avdhesh.simpleapp.network.RetrofitModule
-import com.avdhesh.simpleapp.ui.adapter.ForecastAdapter
+import com.avdhesh.simpleapp.ui.adapter.AudioAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -43,15 +42,15 @@ class MainActivity : AppCompatActivity() {
         )
         binding.recyclerViewForecast.itemAnimator = SlideUpItemAnimator()
 
-        viewModel.isLoading.observe(this, Observer { isLoading ->
+        viewModel.isLoading.observe(this) { isLoading ->
             binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
-        })
+        }
 
-        viewModel.audioData.observe(this, Observer { audioList ->
-            val adapter = ForecastAdapter(audioList)
+        viewModel.audioData.observe(this) { audioList ->
+            val adapter = AudioAdapter(audioList)
             binding.recyclerViewForecast.adapter = adapter
             binding.recyclerViewForecast.itemAnimator = SlideUpItemAnimator()
-        })
+        }
         viewModel.getAudioList(this, NetworkConstant.city, NetworkConstant.apiKey)
 
     }

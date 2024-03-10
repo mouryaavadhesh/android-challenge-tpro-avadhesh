@@ -3,7 +3,7 @@ import javax.inject.Inject
 
 class AudioRepository @Inject constructor(private val apiService: RetrofitService) {
 
-    suspend fun getWeather(city: String, apiKey: String) = apiService.getAudio()
+    suspend fun getAudio() = apiService.getAudio()
 
 
 }
