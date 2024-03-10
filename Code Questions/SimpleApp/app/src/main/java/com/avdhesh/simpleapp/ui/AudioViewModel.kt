@@ -16,8 +16,7 @@ import javax.inject.Inject
 @HiltViewModel
 class AudioViewModel @Inject constructor(private val repository: AudioRepository) :
     ViewModel() {
-    // Your ViewModel code
-//class WeatherViewModel(private val repository: WeatherRepository) : ViewModel() {
+
     private val _audioData = MutableLiveData<List<AudioItem>>()
     val audioData: LiveData<List<AudioItem>> get() = _audioData
 
