@@ -1,42 +1,48 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id("org.jetbrains.kotlin.android")
+}
 
-apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    namespace = "com.tpro.brokenapp.tpro.brokenapp.tpro.broeknapp"
+    compileSdk = 34
+
     defaultConfig {
-        applicationId "com.tpro.brokenapp"
-        minSdkVersion 28
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        applicationId ="com.tpro.brokenapp.tpro.brokenapp.tpro.broeknapp"
+        minSdk = 29
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+        testInstrumentationRunner= "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         debug {
-            minifyEnabled true
+            minifyEnabled false // Generally avoid minification in debug builds
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.core:core-ktx:1.0.2'
-    implementation 'com.google.android.exoplayer:exoplayer:2.11.1'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    implementation("com.squareup.okhttp3:okhttp:4.3.1")
-
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version" // Use JDK8 for better compatibility
+    implementation 'androidx.appcompat:appcompat:1.6.1' // Update to latest version
+    implementation 'androidx.core:core-ktx:1.12.0' // Update to latest version
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.1' // Update to latest version
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Update to latest version
+    testImplementation 'junit:junit:4.13.2' // Update to latest version
+    androidTestImplementation 'androidx.test:runner:1.5.2' // Update to latest version
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1' // Update to latest version
+    implementation "com.squareup.okhttp3:okhttp:4.9.3" // Update to latest version
 }
