@@ -14,6 +14,7 @@ import com.avdhesh.simpleapp.network.RetrofitModule
 import com.avdhesh.simpleapp.ui.adapter.AudioAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
+
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
@@ -39,6 +40,23 @@ class MainActivity : AppCompatActivity() {
                 DividerItemDecoration.VERTICAL
             )
         )
+
+        binding.playPauseButton.setOnClickListener {
+            if (viewModel.isPlaying) {
+                viewModel.mediaPlayer?.pause()
+                binding.playPauseButton.setImageResource(android.R.drawable.ic_media_play)
+            } else {
+                viewModel.mediaPlayer?.start()
+                binding.playPauseButton.setImageResource(android.R.drawable.ic_media_pause)
+            }
+            viewModel.isPlaying = !viewModel.isPlaying
+        }
+
+        binding.previousButton.setOnClickListener {
+        }
+
+        binding.nextButton.setOnClickListener {
+        }
         binding.recyclerViewForecast.itemAnimator = SlideUpItemAnimator()
 
         viewModel.isLoading.observe(this) { isLoading ->
@@ -52,5 +70,14 @@ class MainActivity : AppCompatActivity() {
         }
         viewModel.getAudioList(this)
 
+    }
+
+
+    override fun onDestroy() {
+        super.onDestroy()
+        // Release the MediaPlayer when the activity is destroyed
+        if (viewModel.mediaPlayer != null) {
+            viewModel.mediaPlayer!!.release()
+        }
     }
 }

@@ -14,10 +14,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:orientation="vertical"
         tools:context=".ui.MainActivity">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewForecast"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:dividerHeight="1dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -27,17 +37,43 @@
             android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewForecast"
+        <SeekBar
+            android:id="@+id/positionBar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:dividerHeight="1dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity=""
+            android:orientation="horizontal">
 
+            <!-- previous button -->
+            <ImageButton
+                android:id="@+id/previousButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/na"
+                android:src="@android:drawable/ic_media_previous" />
+
+            <!-- play/pause button -->
+            <ImageButton
+                android:id="@+id/playPauseButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/na"
+                android:src="@android:drawable/ic_media_pause" />
+
+            <!-- next button -->
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/na"
+                android:src="@android:drawable/ic_media_next" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
