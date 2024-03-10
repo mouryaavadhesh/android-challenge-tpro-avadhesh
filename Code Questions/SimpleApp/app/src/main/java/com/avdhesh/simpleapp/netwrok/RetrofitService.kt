@@ -1,6 +1,6 @@
 package com.avdhesh.simpleapp.network
 
-import com.avdhesh.simpleapp.model.AudioModel
+import com.avdhesh.simpleapp.model.AudioItem
 import cz.msebera.httpclient.android.BuildConfig
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -16,7 +16,7 @@ import retrofit2.http.GET
 interface RetrofitService {
     @GET
     suspend fun getAudio(
-    ): Response<List<AudioModel>>
+    ): Response<List<AudioItem>>
 }
 
 @Module

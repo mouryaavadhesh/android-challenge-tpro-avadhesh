@@ -5,10 +5,10 @@ import android.view.ViewGroup
 
 import androidx.recyclerview.widget.RecyclerView
 import com.avdhesh.simpleapp.databinding.ListItemBinding
-import com.avdhesh.simpleapp.model.AudioModel
+import com.avdhesh.simpleapp.model.AudioItem
 
 
-class AudioAdapter(private val audioList: List<AudioModel>) :
+class AudioAdapter(private val audioList: List<AudioItem>) :
     RecyclerView.Adapter<AudioAdapter.AudioViewHolder>() {
 
     class AudioViewHolder(val binding: ListItemBinding) :

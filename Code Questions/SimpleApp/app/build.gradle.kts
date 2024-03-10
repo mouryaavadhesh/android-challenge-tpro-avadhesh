@@ -79,7 +79,6 @@ dependencies {
     implementation ("cz.msebera.android:httpclient:4.5.8")
     implementation ("com.google.code.gson:gson:2.10.1")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.12.0")
-    implementation ("androidx.databinding:data-binding-runtime:8.2.0")
     implementation ("androidx.recyclerview:recyclerview:1.3.2")
 
 }

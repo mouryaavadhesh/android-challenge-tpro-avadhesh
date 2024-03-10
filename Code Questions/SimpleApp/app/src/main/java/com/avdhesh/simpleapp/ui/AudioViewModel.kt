@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.avdhesh.simpleapp.model.AudioModel
+import com.avdhesh.simpleapp.model.AudioItem
 import com.avdhesh.simpleapp.utils.HandleError
 import dagger.hilt.android.lifecycle.HiltViewModel
 
@@ -18,8 +18,8 @@ class AudioViewModel @Inject constructor(private val repository: AudioRepository
     ViewModel() {
     // Your ViewModel code
 //class WeatherViewModel(private val repository: WeatherRepository) : ViewModel() {
-    private val _audioData = MutableLiveData<List<AudioModel>>()
-    val audioData: LiveData<List<AudioModel>> get() = _audioData
+    private val _audioData = MutableLiveData<List<AudioItem>>()
+    val audioData: LiveData<List<AudioItem>> get() = _audioData
 
 
     private val _isLoading = MutableLiveData<Boolean>()
@@ -30,7 +30,7 @@ class AudioViewModel @Inject constructor(private val repository: AudioRepository
         _isLoading.value = false
     }
 
-    fun getAudioList(context: Context, city: String, apiKey: String) {
+    fun getAudioList(context: Context) {
         _isLoading.value = true
 
         viewModelScope.launch {

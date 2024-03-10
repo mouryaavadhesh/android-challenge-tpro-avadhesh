@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import com.avdhesh.simpleapp.R
 import com.avdhesh.simpleapp.databinding.ActivityMainBinding
 import com.avdhesh.simpleapp.model.AudioViewModelFactory
-import com.avdhesh.simpleapp.network.NetworkConstant
 import com.avdhesh.simpleapp.network.RetrofitModule
 import com.avdhesh.simpleapp.ui.adapter.AudioAdapter
 import dagger.hilt.android.AndroidEntryPoint
@@ -24,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         val apiService =
             RetrofitModule.getInstance()
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             binding.recyclerViewForecast.adapter = adapter
             binding.recyclerViewForecast.itemAnimator = SlideUpItemAnimator()
         }
-        viewModel.getAudioList(this, NetworkConstant.city, NetworkConstant.apiKey)
+        viewModel.getAudioList(this)
 
     }
 }
