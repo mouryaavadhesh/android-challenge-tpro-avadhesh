@@ -14,7 +14,7 @@ import retrofit2.http.GET
 
 
 interface RetrofitService {
-    @GET
+    @GET("dev")
     suspend fun getAudio(
     ): Response<List<AudioItem>>
 }
@@ -35,7 +35,7 @@ object RetrofitModule {
     fun getInstance(): RetrofitService {
         if (retrofitService == null) {
             val retrofit = Retrofit.Builder()
-                .baseUrl("https://urvd7g56zh.execute-api.eu-west-2.amazonaws.com/dev")
+                .baseUrl("https://urvd7g56zh.execute-api.eu-west-2.amazonaws.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
