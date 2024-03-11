@@ -12,15 +12,15 @@ T-Pro gave the following implementation hints:
 
 ## Prerequisites
 
-A:
+A:Android Studio,Android SDK,Kotlin,Dependency Management,Dependency Management,Dependency Injection (DI), HTTP Library
 
 ## Architecture
 
-A:
+A:Clean architecture with mvvm
 
 ## Libraries Used
 
-A:
+A: retrofit2,dagger:hil,recyclerview,lifecycle:lifecycle
 
 ## Backlog
 
@@ -35,6 +35,10 @@ A:
 
 ## Improvements
 
-A:
+A: Can have proper start and end time.
+   Seekbar seek to song forward and backward.
+   Ui improvement.
+   
 
 ## Author
+Avadhesh Mourya
