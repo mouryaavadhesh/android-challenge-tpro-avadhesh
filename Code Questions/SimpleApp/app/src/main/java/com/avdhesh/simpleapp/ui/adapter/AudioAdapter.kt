@@ -8,7 +8,7 @@ import com.avdhesh.simpleapp.databinding.ListItemBinding
 import com.avdhesh.simpleapp.model.AudioItem
 
 
-class AudioAdapter(private val audioList: List<AudioItem>) :
+class AudioAdapter(private val audioList: List<AudioItem>,  private val clickListener: (AudioItem) -> Unit) :
     RecyclerView.Adapter<AudioAdapter.AudioViewHolder>() {
 
     class AudioViewHolder(val binding: ListItemBinding) :
@@ -25,6 +25,9 @@ class AudioAdapter(private val audioList: List<AudioItem>) :
         holder.binding.audioItem = audioItem
         holder.binding.executePendingBindings()
         // Add additional bindings as needed
+        holder.itemView.setOnClickListener {
+            clickListener(audioItem)
+        }
     }
 
     override fun getItemCount(): Int = audioList.size

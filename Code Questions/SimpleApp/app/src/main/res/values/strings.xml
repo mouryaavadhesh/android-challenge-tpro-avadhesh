@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Simple App</string>
     <string name="na">NA</string>
+    <string name="_00_00">00:00</string>
 </resources>
