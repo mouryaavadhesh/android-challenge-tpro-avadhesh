@@ -16,11 +16,11 @@ The whole test is divided in three levels and the collection of answers to these
 ### First Level
 
 | Task |                                                                Done                                                                 | Time Spent |
-| ----------- |:-----------------------------------------------------------------------------------------------------------------------------------:| :-: |
-| [Explain the main concept of lambda functions.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) |                 Think of lambda expressions as little coding shortcuts—a way to write concise, anonymous functions.                 | |
-| [What's the difference between `UInt16` and `Int32`?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) |    UInt16 is a 16-bit unsigned integer (0 to 65,535), while Int32 is a 32-bit signed integer (-2,147,483,648 to 2,147,483,647).     | |
-| [Do you have any experience with functional programming languages?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) |                                                                 No                                                                  | |
-| [Compile any Kotlin source using `kotlinc`.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) |                                           kotlinc hello.kt -include-runtime -d hello.jar                                            | |
+| ----------- |:-----------------------------------------------------------------------------------------------------------------------------------:|:----------:|
+| [Explain the main concept of lambda functions.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) |                 Think of lambda expressions as little coding shortcuts—a way to write concise, anonymous functions.                 |  1 Minute  |
+| [What's the difference between `UInt16` and `Int32`?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) |    UInt16 is a 16-bit unsigned integer (0 to 65,535), while Int32 is a 32-bit signed integer (-2,147,483,648 to 2,147,483,647).     |  1 Minute  |
+| [Do you have any experience with functional programming languages?](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/README.md) |                                                                 No                                                                  |            |
+| [Compile any Kotlin source using `kotlinc`.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) |                                           kotlinc hello.kt -include-runtime -d hello.jar                                            |   30 Sec   |
 | [Create a function in Kotlin that writes 50 million random floats in a file.](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/blob/master/Code%20Questions/README.md) |                                                        import kotlin.random.Random
 
 fun generateRandomFloatsToFile(fileName: String, count: Int) {
