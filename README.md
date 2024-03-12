@@ -55,13 +55,13 @@ generateRandomFloatsToFile(fileName, numberOfFloats)
 ### Third Level
 
 | Task | Done | Time Spent |
-| ----------- | :-: | :-: |
-| Solve the bugs and bad pratices of the project inside the [BrokenApp](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/BrokenApp) folder. |   | |
-| Create a [simple app](hhttps://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/SimpleApp) app that requests a specific endpoint. |   | |
+| ----------- |:----:|:----------:|
+| Solve the bugs and bad pratices of the project inside the [BrokenApp](https://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/BrokenApp) folder. | Done |    2 hr    |
+| Create a [simple app](hhttps://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/SimpleApp) app that requests a specific endpoint. | Done |   1 Day    |
 
 ### Bonus
 
 | Task | Done | Time Spent |
-| ----------- | :-: | :-: |
-| Create a fastlane script to build your [simple app](hhttps://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/SimpleApp) project. |   | |
-| Use Coroutines for async process. |   | |
+| ----------- |:----:|:----------:|
+| Create a fastlane script to build your [simple app](hhttps://github.com/mouryaavadhesh/android-challenge-tpro-avadhesh/tree/master/Code%20Questions/SimpleApp) project. |      |            |
+| Use Coroutines for async process. | Done |     20     |
